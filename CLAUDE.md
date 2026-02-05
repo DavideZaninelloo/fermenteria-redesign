@@ -104,6 +104,13 @@ npm run lint
 - Filterable HTML version + downloadable PDF
 - Mobile-optimized presentation
 
+## Development Process Rules
+
+**Logging & Documentation:**
+- **Mandatory Log:** Every work session REQUIRES a NEW daily log file.
+- **Path:** `/docs/daily-log/YYYY-MM-DD-short-description.md`
+- **Rule:** NEVER overwrite or modify previous daily logs. Create a unique file for each session to preserve historical context.
+
 ## Performance & SEO Requirements
 
 **Technical Standards:**

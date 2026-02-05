@@ -63,5 +63,6 @@ npx create-next-app@latest fermenteria --typescript --tailwind --eslint --app
 - **Accessibility:** Ensure high contrast and clear typography.
 
 ## Documentation & Logging
-- **Daily Log:** Every development session must be documented in `/docs/daily-log/YYYY-MM-DD-features-fatta.md`.
-- **Content:** The log should describe what was done, the reasoning behind decisions, and future plans to maintain a clear project history.
+- **Daily Log:** EVERY development session MUST be documented in a NEW file in `/docs/daily-log/YYYY-MM-DD-feature-name.md`.
+- **No Overwriting:** Never overwrite previous log files. Each file represents a discrete session of work.
+- **Content:** The log should describe what was done, the reasoning behind decisions, and future plans.

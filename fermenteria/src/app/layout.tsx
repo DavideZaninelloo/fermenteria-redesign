@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/ui/Navbar";
+import Footer from "@/components/ui/Footer";
+import WhatsAppCTA from "@/components/ui/WhatsAppCTA";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +28,14 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body
-        className={`${geistSans.variable} ${playfair.variable} antialiased font-sans`}
+        className={`${geistSans.variable} ${playfair.variable} antialiased font-sans bg-secondary`}
       >
-        {children}
+        <Navbar />
+        <main>
+          {children}
+        </main>
+        <Footer />
+        <WhatsAppCTA />
       </body>
     </html>
   );
