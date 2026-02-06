@@ -49,12 +49,12 @@ const MenuPreview = () => {
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">Dalla Nostra Cucina</h2>
             <p className="text-xl text-zinc-600 font-light">
-              Una selezione dei nostri piatti più amati. Ingredienti biologici, 
+              Una selezione dei nostri piatti più amati. Ingredienti biologici,
               preparazioni artigianali e una passione infinita per il gusto.
             </p>
           </div>
-          <Link 
-            href="/menu" 
+          <Link
+            href="/menu"
             className="flex items-center gap-2 text-primary font-medium hover:gap-4 transition-all group"
           >
             Vedi il Menu Completo <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
@@ -63,23 +63,23 @@ const MenuPreview = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {dishes.map((dish, index) => (
-            <div key={index} className="bg-white rounded-sm overflow-hidden shadow-sm hover:shadow-md transition-shadow group">
-              <div className="aspect-square bg-zinc-200 relative overflow-hidden">
+            <div key={index} className="bg-white rounded-sm overflow-hidden shadow-card hover:shadow-float transition-all duration-300 group">
+              <div className="aspect-square bg-stone-200 relative overflow-hidden">
                 {/* Placeholder for Dish Image */}
-                <div className="absolute inset-0 flex items-center justify-center text-zinc-400 text-xs font-medium uppercase tracking-widest p-4 text-center">
+                <div className="absolute inset-0 flex items-center justify-center text-text-light text-xs font-medium uppercase tracking-widest p-4 text-center">
                   1:1 - {dish.name}
                 </div>
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-500" />
+                <div className="absolute inset-0 bg-yellow-dark/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
               <div className="p-8">
-                <span className="text-xs uppercase tracking-widest text-accent font-semibold mb-2 block">
+                <span className="text-xs uppercase tracking-widest text-yellow-dark font-semibold mb-2 block">
                   {dish.category}
                 </span>
                 <div className="flex justify-between items-start mb-3 gap-4">
-                  <h3 className="text-xl font-serif leading-tight">{dish.name}</h3>
-                  <span className="text-primary font-medium">{dish.price}</span>
+                  <h3 className="text-xl font-serif leading-tight text-text-primary">{dish.name}</h3>
+                  <span className="text-yellow-dark font-medium">{dish.price}</span>
                 </div>
-                <p className="text-zinc-600 text-sm leading-relaxed">
+                <p className="text-text-secondary text-sm leading-relaxed">
                   {dish.description}
                 </p>
               </div>

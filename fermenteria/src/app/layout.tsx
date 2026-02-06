@@ -1,18 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Playfair_Display } from "next/font/google";
+import { Inter, Crimson_Text, Abril_Fatface } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/ui/Footer";
 import WhatsAppCTA from "@/components/ui/WhatsAppCTA";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: 'swap',
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const crimsonText = Crimson_Text({
+  variable: "--font-crimson",
   subsets: ["latin"],
+  weight: ['400', '600'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+});
+
+const abrilFatface = Abril_Fatface({
+  variable: "--font-abril",
+  subsets: ["latin"],
+  weight: '400',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -28,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="it">
       <body
-        className={`${geistSans.variable} ${playfair.variable} antialiased font-sans bg-secondary`}
+        className={`${inter.variable} ${crimsonText.variable} ${abrilFatface.variable} antialiased font-sans bg-neutral-50 text-neutral-900`}
       >
         <Navbar />
         <main>
